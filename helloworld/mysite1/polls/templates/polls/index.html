@@ -1,0 +1,23 @@
+{% extends 'polls/base.html'%}
+{% block content %}
+
+
+
+<div class="container">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <h1 style="background-color:SlateGrey;"> WELCOME TO WEBSERVER</h1>
+
+  <a href=" {% url 'polls:view_list'%} "><button type="button" class="btn">Temperature</button></a>
+  <a href=" {% url 'polls:view_list'%} "><button type="button" class="btn btn-default">Humidity</button></a>
+  <a href=" {% url 'polls:database'%}"> <button type="button" class="btn btn-primary">Database</button></a>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'polls/base.html'%}
+{% block content %}
+
+
+
+<h1>database</h1>
+
+
+
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Table</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Adress</th>
+  </tr>
+  <tr>
+     <td>{{obj}}</td>
+
+
+  </tr>
+
+</table>
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
